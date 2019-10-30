@@ -39,7 +39,7 @@ class Student
     
     DB[:conn].execute(sql)
     
-    @id = DB[:conn].execute()[0][0]
+    @id = DB[:conn].execute(SELECT last)[0][0]
   end
   
   
